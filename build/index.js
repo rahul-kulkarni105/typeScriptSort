@@ -14,16 +14,23 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-var Sorter_1 = require("./Sorter");
+// import { Sorter } from './Sorter';
 // import { NumbersCollection } from './NumbersCollection';
-var CharactersCollection_1 = require("./CharactersCollection");
+// import { CharactersCollection } from './CharactersCollection';
+var LinkedList_1 = require("./LinkedList");
 /** Numbers sort */
 // const numbersCollection = new NumbersCollection([55, 3, -5, 0]);
-// const sorter = new Sorter(numbersCollection);
-// sorter.sort();
+// numbersCollection.sort();
 // console.log(numbersCollection.data);
 /** String of characters sort */
-var charactersCollection = new CharactersCollection_1.CharactersCollection('xaaybibud');
-var sorter = new Sorter_1.Sorter(charactersCollection);
-sorter.sort();
-console.log(charactersCollection.data);
+// const charactersCollection = new CharactersCollection('xaaybibud');
+// charactersCollection.sort();
+// console.log(charactersCollection.data);
+/** Linked List sort */
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.sort();
+linkedList.print();

@@ -1,3 +1,5 @@
+import { Sorter } from './Sorter';
+
 class Node {
   /**
    * Reason next is not part of the constructor
@@ -10,7 +12,7 @@ class Node {
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   head: Node | null = null;
 
   add(data: number): void {
